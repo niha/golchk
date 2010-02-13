@@ -29,6 +29,9 @@ def same_entry(lhs, rhs)
 end
 
 lastdate = nil
+tw_user = ""
+tw_pass = ""
+
 db = PStore.new(DB_PATH)
 db.transaction(PS_RD) do
   lastdate = db[:lastdate]
